@@ -1,11 +1,11 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class UserService  {
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final Firestore _db = Firestore.instance;
+//  final Firestore _db = Firestore.instance;
 
   Future<FirebaseUser> googleSignIn() async {
     GoogleSignInAccount googleUser = await _googleSignIn.signIn();
@@ -19,14 +19,14 @@ class UserService  {
   }
 
   void updateUserData(FirebaseUser user) async {
-    DocumentReference ref = _db.collection('users').document(user.uid);
-    return ref.setData({
-      'uid': user.uid,
-      'email': user.email,
-      'photoURL': user.photoUrl,
-      'displayName': user.displayName,
-      'lastSeen': DateTime.now()
-    }, merge: true);
+//    DocumentReference ref = _db.collection('users').document(user.uid);
+//    return ref.setData({
+//      'uid': user.uid,
+//      'email': user.email,
+//      'photoURL': user.photoUrl,
+//      'displayName': user.displayName,
+//      'lastSeen': DateTime.now()
+//    }, merge: true);
   }
 
   void signOut() {

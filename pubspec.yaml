@@ -54,20 +54,20 @@ flutter:
     - assets/
 
   fonts:
-    - family: Roboto-Light
+    - family: Raleway-Light
       fonts:
-        - asset: assets/fonts/roboto/Roboto-Light.ttf
+        - asset: assets/fonts/raleway/Raleway-Light.ttf
 
-    - family: Roboto-Regular
+    - family: Raleway-Regular
       fonts:
-        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+        - asset: assets/fonts/raleway/Raleway-Regular.ttf
 
-    - family: Roboto
+    - family: Raleway
       fonts:
-        - asset: assets/fonts/roboto/Roboto-Medium.ttf
+        - asset: assets/fonts/raleway/Raleway-Medium.ttf
 
-    - family: Roboto-Medium
+    - family: Raleway-Medium
       fonts:
-        - asset: assets/fonts/roboto/Roboto-Medium.ttf
+        - asset: assets/fonts/raleway/Raleway-Medium.ttf
 
 

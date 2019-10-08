@@ -17,7 +17,8 @@ ThemeData appTheme() {
         scaffoldBackgroundColor: Colors.white,
         canvasColor: CustomColors.primary,
         textTheme: TextTheme(
-            subtitle: CustomTextStyle.sub_title, title: CustomTextStyle.title));
+            subtitle: CustomTextStyle.sub_title,
+            title: CustomTextStyle.title));
   } else if (Platform.isIOS) {
     themeData = ThemeData(
         primaryColor: CustomColors.primary,

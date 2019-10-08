@@ -19,25 +19,32 @@ class GoogleSignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      shape:
-          ContinuousRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(50.0))),
       height: 60,
       color: Colors.white,
       minWidth: width,
       onPressed: onPressed,
       child: new Stack(
         children: <Widget>[
-          Align(
-            child: Text(
-              label,
-              style: CustomTextStyle.titleB,
+          Padding(
+              child: Image(
+                image: AssetImage(Assets.google_logo),
+                fit: BoxFit.contain,
+                width: 30,
+                height: 30,
+              ),
+              padding: EdgeInsets.only(left: 10)),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: Text(
+                label,
+                style: CustomTextStyle.titleB,
+              ),
             ),
-            alignment: Alignment.center,
-          ),
-          Align(
-            child: Image(image: AssetImage(Assets.google_logo)),
-            alignment: Alignment.centerLeft,
-          ),
+          )
         ],
       ),
     );

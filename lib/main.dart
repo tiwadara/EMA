@@ -30,7 +30,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Instant Driver',
+      title: 'EMA',
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         '/onboard': (BuildContext context) => new OnboardingScreen(),
